@@ -1,0 +1,27 @@
+[
+    {
+        "storeName": "Happy Bites",
+        "location": "Downtown",
+        "foodOptions": ["Pizza", "Burger", "Salad"]
+    },
+    {
+        "storeName": "Gourmet Hub",
+        "location": "Midtown",
+        "foodOptions": ["Sushi", "Ramen", "Tempura"]
+    },
+    {
+        "storeName": "Morning Delight",
+        "location": "Uptown",
+        "foodOptions": ["Pancakes", "Waffles", "Omelette"]
+    },
+    {
+        "storeName": "Sunset Grill",
+        "location": "Downtown",
+        "foodOptions": ["Steak", "Ribs", "Baked Potato"]
+    },
+    {
+        "storeName": "Green Leaf",
+        "location": "Midtown",
+        "foodOptions": ["Vegan Burger", "Quinoa Salad", "Green Smoothie"]
+    }
+]

@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+<!-- jQuery (if needed for your Bootstrap version) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+
     <title>NTU Eateries Finder</title>
     <style>
         body {
@@ -40,20 +53,39 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <input type="text" class="search-bar" placeholder="Search eateries...">
-        <button class="button" id="feelingLuckyBtn">I'm Feeling Lucky</button>
-
-        <div class="location-picker" id="locationPicker">
-            <button class="button" id="randomLocationBtn">Random Location</button>
-            <button class="button" id="pickLocationBtn">Pick Location</button>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center mb-5">
+                <h2>NTU food</h2>
+            </div>
         </div>
-
-        <div id="foodDisplay" style="display:none;">
-            <!-- Food display section will be updated dynamically using JS -->
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <img src="logo.png" alt="NTU logo" width="40" height="40" class="mb-4"> <!-- Link to your logo image -->
+                <div class="input-group mb-4">
+                    <input type="text" class="form-control" placeholder="Search stores or locations...">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button">Search</button>
+                    </div>
+                </div>
+                <button class="btn btn-primary mb-3" id="luckyButton">I'm Feeling Lucky</button>
+                <div id="luckyOptions" style="display: none;">
+                    <button class="btn btn-secondary mb-2" id="randomLocation">Random Location</button>
+                    <button class="btn btn-secondary mb-2" id="pickLocation">Pick Location</button>
+                </div>
+                <div id="locationOptions" class="mb-3" style="display: none;">
+                    <!-- Dynamically add location options here -->
+                </div>
+                <div id="showFood" style="display: none;">
+                    <!-- Food place information will be displayed here -->
+                    <button class="btn btn-danger" id="pass">Pass</button>
+                    <button class="btn btn-success" id="smash">Smash</button>
+                </div>
+            </div>
         </div>
     </div>
+    
 
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
