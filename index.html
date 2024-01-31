@@ -16,9 +16,31 @@
 <!-- Bootstrap Bundle with Popper -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
+<button id="darkModeToggle">Toggle Dark Mode</button>
 
     <title>NTU Eateries Finder</title>
     <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            /* Add other color variables as needed */
+        }
+        [data-theme="dark"] {
+            --bg-color: #363537;
+            --text-color: #FAFAFA;
+            /* Add other dark theme color variables as needed */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        /* Other elements styling */
+    </style>
+    
+    <style>
+
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;

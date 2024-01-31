@@ -102,3 +102,18 @@ document.addEventListener('DOMContentLoaded', () => {
         // You can display the filteredStores below the search bar as a preview
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const darkModeToggle = document.getElementById('darkModeToggle');
+
+    darkModeToggle.addEventListener('click', () => {
+        const theme = document.documentElement.getAttribute('data-theme');
+        if (theme === 'dark') {
+            document.documentElement.removeAttribute('data-theme');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    });
+
+    // ... (rest of your code)
+});
