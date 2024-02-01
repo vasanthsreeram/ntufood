@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div>
                     <h3>${store.storeName}</h3>
                     <p>${store.location}</p>
-                    <p>${store.vegetarian ? '<img src="veg.png" alt="Vegetarian" style="height: 20px;"/>':"" }</p>
+                    <p>${store.vegetarian ? '<img src="veg.png" alt="Vegetarian" style="height: 20px;"/>' : 'No'}</p>
                     <p>${store.openingHours}</p>
                     <button class="btn btn-danger" id="pass">Pass</button>
                     <button class="btn btn-success" id="smash">Smash</button>
