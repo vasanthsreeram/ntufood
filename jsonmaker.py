@@ -1,8 +1,9 @@
 import csv
 import json
 import os
+print(os.getcwd())
 
-os.chdir("/Users/vasanth/Desktop/Projects/ntufood")
+# os.chdir("/Users/vasanth/Desktop/Projects/ntufood")
 
 # Define the path to the CSV file and the output JSON file
 csv_file_path = 'data.csv'

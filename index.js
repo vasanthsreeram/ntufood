@@ -1,13 +1,4 @@
 // Assuming you have a JSON file named data.json in the same directory
-// Structure of data.json:
-// [
-//   {
-//     "storeName": "Store 1",
-//     "location": "Location 1",
-//     "foodOptions": ["Food 1", "Food 2", ...]
-//   },
-//   ...
-// ]
 
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('searchInput');
@@ -66,104 +57,104 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch stores data from the JSON file
     storesData = [
         {
-            "storeName": "Mixed veg rice ",
+            "storeName": "Mixed veg rice",
             "location": "Canteen 2",
             "vegetarian": true,
             "openingHours": "10 am\u20139:30 pm"
         },
         {
-            "storeName": "Taiwan cuisine ",
+            "storeName": "Taiwan cuisine",
             "location": "Canteen 2",
             "vegetarian": false,
             "openingHours": "11 am\u20139:30 pm"
         },
         {
-            "storeName": "Mini wok ",
+            "storeName": "Mini wok",
             "location": "Canteen 2",
             "vegetarian": false,
             "openingHours": "12 am\u20139:30 pm"
         },
         {
-            "storeName": "Korean cuisine ",
-            "location": "Canteen 2 ",
+            "storeName": "Korean cuisine",
+            "location": "Canteen 2",
             "vegetarian": false,
             "openingHours": "13 am\u20139:30 pm"
         },
         {
-            "storeName": "Xiao Long Bao ",
+            "storeName": "Xiao Long Bao",
             "location": "Canteen 2",
             "vegetarian": false,
             "openingHours": "14 am\u20139:30 pm"
         },
         {
-            "storeName": "Chicken rice ",
-            "location": "Canteen 2 ",
+            "storeName": "Chicken rice",
+            "location": "Canteen 2",
             "vegetarian": false,
             "openingHours": "15 am\u20139:30 pm"
         },
         {
-            "storeName": "Ramen ",
+            "storeName": "Ramen",
             "location": "Canteen 2",
             "vegetarian": false,
             "openingHours": "16 am\u20139:30 pm"
         },
         {
-            "storeName": "Thai cuisine ",
+            "storeName": "Thai cuisine",
             "location": "Canteen 2",
             "vegetarian": false,
             "openingHours": "17 am\u20139:30 pm"
         },
         {
-            "storeName": "Western cuisine ",
+            "storeName": "Western cuisine",
             "location": "Canteen 2",
             "vegetarian": false,
             "openingHours": "18 am\u20139:30 pm"
         },
         {
-            "storeName": "Mcdonalds ",
-            "location": "North Spine ",
+            "storeName": "Mcdonalds",
+            "location": "North Spine",
             "vegetarian": true,
             "openingHours": "7 am\u201310 pm"
         },
         {
             "storeName": "popeyes",
-            "location": "North Spine ",
+            "location": "North Spine",
             "vegetarian": false,
             "openingHours": ""
         },
         {
             "storeName": "Encik Tan",
-            "location": "North Spine ",
+            "location": "North Spine",
             "vegetarian": true,
             "openingHours": ""
         },
         {
             "storeName": "Blue ocean",
-            "location": "North Spine ",
+            "location": "North Spine",
             "vegetarian": true,
             "openingHours": ""
         },
         {
-            "storeName": "Starbucks ",
-            "location": "North Spine ",
+            "storeName": "Starbucks",
+            "location": "North Spine",
             "vegetarian": true,
             "openingHours": "7 am\u201310 pm"
         },
         {
             "storeName": "Subway",
-            "location": "North Spine ",
+            "location": "North Spine",
             "vegetarian": true,
             "openingHours": "7am to 8pm"
         },
         {
             "storeName": "Pasta express",
-            "location": "North Spine ",
+            "location": "North Spine",
             "vegetarian": true,
             "openingHours": "10.30am to 7.30pm"
         },
         {
             "storeName": "Mr bean",
-            "location": "North Spine ",
+            "location": "North Spine",
             "vegetarian": true,
             "openingHours": ""
         },
@@ -186,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "openingHours": "7am to 8pm"
         },
         {
-            "storeName": "Hot pot snail ",
+            "storeName": "Hot pot snail",
             "location": "South Spine",
             "vegetarian": true,
             "openingHours": "7am to 8pm"
@@ -198,13 +189,13 @@ document.addEventListener('DOMContentLoaded', () => {
             "openingHours": "7am to 8pm"
         },
         {
-            "storeName": "Braised Duck Rice ",
+            "storeName": "Braised Duck Rice",
             "location": "South Spine",
             "vegetarian": false,
             "openingHours": "7am to 8pm"
         },
         {
-            "storeName": "Mixed Veg rice ",
+            "storeName": "Mixed Veg rice",
             "location": "South Spine",
             "vegetarian": true,
             "openingHours": "7am to 8pm"
@@ -271,7 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Event listeners for Smash and Pass buttons
             document.getElementById('smash').addEventListener('click', () => {
                 console.log('Smash')
-                window.location.href = 'survey.html'; // Redirect to survey page
+                window.location.href = 'thanks.html'; // Redirect to thanks page
             });
             document.getElementById('pass').addEventListener('click', () => {
                 console.log('Pass')
@@ -296,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     smashButton.addEventListener('click', () => {
-        window.location.href = 'survey.html'; // Redirect to survey page
+        window.location.href = 'thanks.html'; // Redirect to survey page
     });
 
     function displayFoodOptions(index, pass = false) {
@@ -320,26 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const darkModeToggle = document.getElementById('darkModeToggle');
+ 
+ 
 
-    darkModeToggle.addEventListener('click', () => {
-        const theme = document.documentElement.getAttribute('data-theme');
-        if (theme === 'dark') {
-            document.documentElement.removeAttribute('data-theme');
-        } else {
-            document.documentElement.setAttribute('data-theme', 'dark');
-        }
-    });
-
-    // ... (rest of your code)
-});
-
-const darkModeToggle = document.querySelector('.switch__input');
-darkModeToggle.addEventListener('change', function() {
-    if (this.checked) {
-        document.body.setAttribute('data-theme', 'dark');
-    } else {
-        document.body.removeAttribute('data-theme');
-    }
-});
+ 
