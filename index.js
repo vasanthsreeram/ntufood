@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentStoreIndex = null;
     let storesData = [];
     const searchResults = document.getElementById('searchResults');
+    let currentMode = ''; // 'random' for random location mode, 'pick' for pick location mode
 
     // Function to display search results
     const displaySearchResults = (stores) => {
@@ -217,11 +218,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     randomLocationButton.addEventListener('click', () => {
+        currentMode = 'random'; // Set mode to random
         document.getElementById('luckyOptions').style.display = 'none'; // Hide lucky options
         showRandomStore(); // Show a random store
     });
 
     pickLocationButton.addEventListener('click', () => {
+        currentMode = 'pick'; // Set mode to pick
         document.getElementById('luckyOptions').style.display = 'none'; // Hide lucky options
         searchResults.style.display = 'none'; // Hide search results
         showLocationOptions(); // Show location options
@@ -265,8 +268,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 window.location.href = 'thanks.html'; // Redirect to thanks page
             });
             document.getElementById('pass').addEventListener('click', () => {
-                console.log('Pass')
-                displayRandomStoreAtLocation(store.location); // Display another store at the same location
+                // console.log("currentMode",currentMode)
+                if (currentMode === 'random') {
+                    // console.log("random")
+                    showRandomStore(); // Display a store from any location
+                } else if (currentMode === 'pick') {
+                    displayRandomStoreAtLocation(stores[0].location); // Display another store at the same location
+                }
             });
         }
     };
@@ -281,8 +289,12 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     passButton.addEventListener('click', () => {
-        if (currentStoreIndex != null) {
-            displayFoodOptions(currentStoreIndex, true);
+        // console.log("currentMode",currentMode)
+        if (currentMode === 'random') {
+            // console.log("random")
+            showRandomStore(); // Display a store from any location
+        } else if (currentMode === 'pick') {
+            displayRandomStoreAtLocation(stores[0].location); // Display another store at the same location
         }
     });
 
