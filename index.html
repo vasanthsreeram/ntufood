@@ -10,37 +10,12 @@
 <!-- Bootstrap Bundle with Popper -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
-<!-- jQuery (if needed for your Bootstrap version) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-
-<!-- Bootstrap Bundle with Popper -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-
-<button id="darkModeToggle">Toggle Dark Mode</button>
-
     <title>NTU Eateries Finder</title>
     <style>
         :root {
-            --bg-color: #ffffff;
-            --text-color: #000000;
-            /* Add other color variables as needed */
-        }
-        [data-theme="dark"] {
             --bg-color: #363537;
             --text-color: #FAFAFA;
-            /* Add other dark theme color variables as needed */
         }
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            transition: background-color 0.3s, color 0.3s;
-        }
-        /* Other elements styling */
-    </style>
-    
-    <style>
-
-        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -49,7 +24,9 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f4;
+            background-color: var(--bg-color);
+        color: var(--text-color);
+        transition: background-color 0.3s, color 0.3s;
         }
 
         .container {
@@ -85,11 +62,12 @@
             <div class="col-md-6 text-center">
                 <img src="logo.png" alt="NTU logo" width="40" height="40" class="mb-4"> <!-- Link to your logo image -->
                 <div class="input-group mb-4">
-                    <input type="text" class="form-control" placeholder="Search stores or locations...">
+                    <input type="text" class="form-control" placeholder="Search stores or locations..." id="searchInput">
                     <div class="input-group-append">
                         <button class="btn btn-secondary" type="button">Search</button>
                     </div>
                 </div>
+                <div id="searchResults" class="list-group" style="display: none;"></div>
                 <button class="btn btn-primary mb-3" id="luckyButton">I'm Feeling Lucky</button>
                 <div id="luckyOptions" style="display: none;">
                     <button class="btn btn-secondary mb-2" id="randomLocation">Random Location</button>

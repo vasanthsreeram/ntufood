@@ -1,0 +1,152 @@
+[
+    {
+        "storeName": "Mixed veg rice ",
+        "location": "Canteen 2",
+        "vegetarian": true,
+        "openingHours": "10 am\u20139:30 pm"
+    },
+    {
+        "storeName": "Taiwan cuisine ",
+        "location": "Canteen 2",
+        "vegetarian": false,
+        "openingHours": "11 am\u20139:30 pm"
+    },
+    {
+        "storeName": "Mini wok ",
+        "location": "Canteen 2",
+        "vegetarian": false,
+        "openingHours": "12 am\u20139:30 pm"
+    },
+    {
+        "storeName": "Korean cuisine ",
+        "location": "Canteen 2 ",
+        "vegetarian": false,
+        "openingHours": "13 am\u20139:30 pm"
+    },
+    {
+        "storeName": "Xiao Long Bao ",
+        "location": "Canteen 2",
+        "vegetarian": false,
+        "openingHours": "14 am\u20139:30 pm"
+    },
+    {
+        "storeName": "Chicken rice ",
+        "location": "Canteen 2 ",
+        "vegetarian": false,
+        "openingHours": "15 am\u20139:30 pm"
+    },
+    {
+        "storeName": "Ramen ",
+        "location": "Canteen 2",
+        "vegetarian": false,
+        "openingHours": "16 am\u20139:30 pm"
+    },
+    {
+        "storeName": "Thai cuisine ",
+        "location": "Canteen 2",
+        "vegetarian": false,
+        "openingHours": "17 am\u20139:30 pm"
+    },
+    {
+        "storeName": "Western cuisine ",
+        "location": "Canteen 2",
+        "vegetarian": false,
+        "openingHours": "18 am\u20139:30 pm"
+    },
+    {
+        "storeName": "Mcdonalds ",
+        "location": "North Spine ",
+        "vegetarian": true,
+        "openingHours": "7 am\u201310 pm"
+    },
+    {
+        "storeName": "popeyes",
+        "location": "North Spine ",
+        "vegetarian": false,
+        "openingHours": ""
+    },
+    {
+        "storeName": "Encik Tan",
+        "location": "North Spine ",
+        "vegetarian": true,
+        "openingHours": ""
+    },
+    {
+        "storeName": "Blue ocean",
+        "location": "North Spine ",
+        "vegetarian": true,
+        "openingHours": ""
+    },
+    {
+        "storeName": "Starbucks ",
+        "location": "North Spine ",
+        "vegetarian": true,
+        "openingHours": "7 am\u201310 pm"
+    },
+    {
+        "storeName": "Subway",
+        "location": "North Spine ",
+        "vegetarian": true,
+        "openingHours": "7am to 8pm"
+    },
+    {
+        "storeName": "Pasta express",
+        "location": "North Spine ",
+        "vegetarian": true,
+        "openingHours": "10.30am to 7.30pm"
+    },
+    {
+        "storeName": "Mr bean",
+        "location": "North Spine ",
+        "vegetarian": true,
+        "openingHours": ""
+    },
+    {
+        "storeName": "Dim Sum",
+        "location": "South Spine",
+        "vegetarian": false,
+        "openingHours": "7am to 8pm"
+    },
+    {
+        "storeName": "Japanese & Korean",
+        "location": "South Spine",
+        "vegetarian": false,
+        "openingHours": "7am to 8pm"
+    },
+    {
+        "storeName": "Bimbowl Jjajang",
+        "location": "South Spine",
+        "vegetarian": false,
+        "openingHours": "7am to 8pm"
+    },
+    {
+        "storeName": "Hot pot snail ",
+        "location": "South Spine",
+        "vegetarian": true,
+        "openingHours": "7am to 8pm"
+    },
+    {
+        "storeName": "Yong Tou foo",
+        "location": "South Spine",
+        "vegetarian": true,
+        "openingHours": "7am to 8pm"
+    },
+    {
+        "storeName": "Braised Duck Rice ",
+        "location": "South Spine",
+        "vegetarian": false,
+        "openingHours": "7am to 8pm"
+    },
+    {
+        "storeName": "Mixed Veg rice ",
+        "location": "South Spine",
+        "vegetarian": true,
+        "openingHours": "7am to 8pm"
+    },
+    {
+        "storeName": "Paik's Bibim",
+        "location": "North Spine",
+        "vegetarian": true,
+        "openingHours": "10am to 9pm"
+    }
+]
